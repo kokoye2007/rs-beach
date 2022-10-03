@@ -4,20 +4,58 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
-let currentPopup: any = undefined;
+let playerCanGoUpstairs: boolean = true;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
 
-    WA.room.onEnterLayer('clockZone').subscribe(() => {
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("clockPopup","It's " + time,[]);
+    // Hackathon Left stairs
+    WA.room.onEnterLayer('leftUpstairsZone').subscribe(() => {
+        playerCanGoUpstairs = false
+        WA.room.hideLayer("leftUpstairsAnim")
+        WA.controls.restorePlayerControls()
+    })
+    WA.room.onEnterLayer('leftDownstairsZone').subscribe(() => {
+        playerCanGoUpstairs = true
+        WA.room.hideLayer("leftDownstairsAnim")
+        WA.controls.restorePlayerControls()
+    })
+    WA.room.onEnterLayer('leftStairsZone').subscribe(() => {
+        if (playerCanGoUpstairs) {
+            WA.controls.disablePlayerControls()
+            WA.room.showLayer("leftUpstairsAnim")
+            WA.player.moveTo(1230,256)
+        } else {
+            WA.controls.disablePlayerControls()
+            WA.room.showLayer("leftDownstairsAnim")
+            WA.player.moveTo(1230,448)
+        }
     })
 
-    WA.room.onLeaveLayer('clockZone').subscribe(closePopUp)
+    // Hackathon Right stairs
+    WA.room.onEnterLayer('rightUpstairsZone').subscribe(() => {
+        playerCanGoUpstairs = false
+        WA.room.hideLayer("rightUpstairsAnim")
+        WA.controls.restorePlayerControls()
+    })
+    WA.room.onEnterLayer('rightDownstairsZone').subscribe(() => {
+        playerCanGoUpstairs = true
+        WA.room.hideLayer("rightDownstairsAnim")
+        WA.controls.restorePlayerControls()
+    })
+    WA.room.onEnterLayer('rightStairsZone').subscribe(() => {
+        if (playerCanGoUpstairs) {
+            WA.controls.disablePlayerControls()
+            WA.room.showLayer("rightUpstairsAnim")
+            WA.player.moveTo(1648,256)
+        } else {
+            WA.controls.disablePlayerControls()
+            WA.room.showLayer("rightDownstairsAnim")
+            WA.player.moveTo(1648,448)
+        }
+    })
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
@@ -25,12 +63,5 @@ WA.onInit().then(() => {
     }).catch(e => console.error(e));
 
 }).catch(e => console.error(e));
-
-function closePopUp(){
-    if (currentPopup !== undefined) {
-        currentPopup.close();
-        currentPopup = undefined;
-    }
-}
 
 export {};
