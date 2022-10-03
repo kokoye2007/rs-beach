@@ -1881,27 +1881,22 @@
         {
          "name":"mapDescription",
          "type":"string",
-         "value":"Sogeti Green X Game: Hackathon EU map"
+         "value":"Amadeus #1ahack4sustainability: Hackathon map"
         }, 
         {
          "name":"mapImage",
          "type":"string",
-         "value":"hackathon-eu.png"
-        }, 
-        {
-         "name":"mapLink",
-         "type":"string",
-         "value":"https:\/\/valdotr.github.io\/sogeti-green-x-game\/hackathon-eu.json"
+         "value":"hackathon.png"
         }, 
         {
          "name":"mapName",
          "type":"string",
-         "value":"Hackathon EU"
+         "value":"Hackathon"
         }, 
         {
          "name":"script",
          "type":"string",
-         "value":"script.js"
+         "value":"src\/main.ts"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.8.2",
