@@ -208,7 +208,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"\/@\/bma\/amadeus-1ahack4sustainability\/plenary#from-hackthon-americas"
+                         "value":"\/@\/bma\/amadeus-1ahack4sustainability\/plenary#from-hackathon-americas"
                         }],
                  "type":"tilelayer",
                  "visible":true,
