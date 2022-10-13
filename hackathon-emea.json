@@ -1409,7 +1409,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"[\n    {\n        \"name\": \"openWebsite\",\n        \"propertytype\": \"\",\n        \"type\": \"string\",\n        \"value\": \"https:\/\/bma-events.typeform.com\/to\/UQuyM2Ys\"\n    }\n]\n"
+                 "value":"https:\/\/bma-events.typeform.com\/to\/UQuyM2Ys"
                 }],
          "type":"tilelayer",
          "visible":true,
