@@ -63,7 +63,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"\/@\/bma\/amadeus-1ahack4sustainability\/hackathon-americas#from-floor-1"
+                         "value":"\/@\/bma\/amadeus-1ahack4sustainability\/hackathon-americas#from-1"
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -1028,12 +1028,12 @@
         {
          "name":"mapImage",
          "type":"string",
-         "value":"hackathon-americas-floor-1.png"
+         "value":"hackathon-americas-1.png"
         }, 
         {
          "name":"mapLink",
          "type":"string",
-         "value":"https:\/\/valdotr.github.io\/amadeus-green-x-game\/hackathon-americas-floor-1.json"
+         "value":"https:\/\/valdotr.github.io\/amadeus-hack4sustainability\/hackathon-americas-1.json"
         }, 
         {
          "name":"mapName",
