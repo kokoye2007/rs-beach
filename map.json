@@ -529,7 +529,7 @@
                         {
                          "name":"jitsiRoomAdminTag",
                          "type":"string",
-                         "value":"admin"
+                         "value":"staff"
                         }],
                  "rotation":0,
                  "type":"area",
