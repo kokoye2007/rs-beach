@@ -211,7 +211,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"\/@\/bma\/amadeus-1ahack4sustainability\/hackathon-emea-floor-1#from-floor0"
+                         "value":"\/@\/bma\/amadeus-1ahack4sustainability\/hackathon-emea-1#from-floor0"
                         }],
                  "type":"tilelayer",
                  "visible":true,

@@ -199,7 +199,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"\/@\/bma\/amadeus-1ahack4sustainability\/hackathon-americas-floor-1#from-floor0"
+                         "value":"\/@\/bma\/amadeus-1ahack4sustainability\/hackathon-americas-1#from-floor0"
                         }],
                  "type":"tilelayer",
                  "visible":true,
