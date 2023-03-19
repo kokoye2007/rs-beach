@@ -2778,6 +2778,28 @@
                  "width":288,
                  "x":1824,
                  "y":1728
+                }, 
+                {
+                 "height":1243.15151515152,
+                 "id":54,
+                 "name":"MEET_UI",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"VarCamp_2.0"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"admin,vol23"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":2554.66666666667,
+                 "x":1.45454545454552,
+                 "y":96.6060606060605
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3348,8 +3370,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":79,
- "nextobjectid":54,
+ "nextlayerid":81,
+ "nextobjectid":55,
  "orientation":"orthogonal",
  "properties":[
         {
